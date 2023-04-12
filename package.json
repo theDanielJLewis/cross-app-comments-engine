@@ -1,7 +1,7 @@
 {
 	"name": "cross-app-comments-engine",
 	"version": "0.1.0",
-	"main": "app.ts",
+	"main": "index.ts",
 	"repository": "git@github.com:theDanielJLewis/cross-app-comments-engine.git",
 	"author": "Daniel J. Lewis <mail@theaudacitytopodcast.com>",
 	"license": "MIT",
@@ -10,7 +10,7 @@
 		"jsonfile": "^6.1.0"
 	},
 	"scripts": {
-		"dev": "nodemon --ignore '*.json' src/app.ts"
+		"dev": "nodemon --ignore '*.json' src/index.ts"
 	},
 	"devDependencies": {
 		"@types/express": "^4.17.17",

@@ -2,8 +2,7 @@ import express from 'express';
 const app = express();
 app.use(express.json());
 import * as comments from './modules/comments';
-import jsonfile from 'jsonfile';
-import { getApps } from './modules/apps';
+import restrict from './middleware/restrict';
 
 // Get published comments
 app.get('/:episodeGuid', (req, res) => {
@@ -35,21 +34,3 @@ app.post('/', restrict, async (req, res) => {
 });
 
 app.listen(3000, () => console.log('Listening on port 3000'));
-
-// Proceed only if the key matches
-async function restrict(
-	req: express.Request,
-	res: express.Response,
-	next: express.NextFunction
-) {
-	const apps = await getApps();
-	const publicKey = req.headers.publickey;
-	const app = apps.filter((a) => a.publicKey === publicKey);
-	console.log(app);
-
-	if (app.length > 0) {
-		next();
-	} else {
-		res.status(401).send('Access denied!');
-	}
-}

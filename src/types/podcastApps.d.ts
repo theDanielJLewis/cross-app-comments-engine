@@ -1,4 +1,4 @@
-export interface App {
+export interface PodcastApp {
 	name: string;
 	publicKey: string;
 }
