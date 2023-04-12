@@ -1,5 +1,5 @@
 import express from 'express';
-import { getApps } from '../modules/apps';
+import { getApps } from '../modules/podcastApps';
 
 // Proceed only if the key matches
 export default async function restrict(
@@ -7,12 +7,12 @@ export default async function restrict(
 	res: express.Response,
 	next: express.NextFunction
 ) {
-	const apps = await getApps();
 	const publicKey = req.headers.publickey;
-	const app = apps.filter((a) => a.publicKey === publicKey);
-	console.log(app);
+	let podcastApps = await getApps();
+	podcastApps = podcastApps.filter((a) => a.publicKey === publicKey);
+	console.log(podcastApps);
 
-	if (app.length > 0) {
+	if (podcastApps.length > 0) {
 		next();
 	} else {
 		res.status(401).send('Access denied!');
