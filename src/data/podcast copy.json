@@ -1,0 +1,25 @@
+{
+	"pendingComments": [
+		{
+			"id": "e0670c435d4f308c221f5943b8df7f17",
+			"episodeGuid": "https://theaudacitytopodcast.com/?p=2053",
+			"date": "2023-02-01T20:12:01.324Z",
+			"author": "Sam Sethi",
+			"content": "\"She.\"",
+			"source": "PodFans",
+			"boost": {
+				"type": "lightning",
+				"value": 0.00005
+			}
+		},
+		{
+			"id": "a64bd371992aeb4c78aa0f9512e11487",
+			"episodeGuid": "https://theaudacitytopodcast.com/?p=1234",
+			"reply": "f83cf15a30650d9241dcff7fb3100ea9",
+			"date": "2023-01-03T08:23:01.324Z",
+			"author": "Dave Jones",
+			"content": "Podcasting is going, indeed!",
+			"source": "CurioCaster"
+		}
+	]
+}

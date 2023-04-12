@@ -1,0 +1,43 @@
+{
+  "comments": [
+    {
+      "id": "f83cf15a30650d9241dcff7fb3100ea9",
+      "date": "2023-01-01T20:12:01.324Z",
+      "author": "Adam Curry",
+      "content": "GO PODCASTING!",
+      "source": "ZippyCast",
+      "boost": {
+        "type": "lightning",
+        "value": 5e-8
+      }
+    },
+    {
+      "id": "9d7aa7921138eb55b5909ae9d0eab0cd",
+      "date": "2023-01-04T12:08:01.324Z",
+      "author": "Todd Cochrane",
+      "content": "Don't eat me, James Cridland!",
+      "source": "Fountain",
+      "boost": {
+        "type": "lightning",
+        "value": 7.777e-8
+      },
+      "replies": [
+        {
+          "id": "8d2632a7bc173c3e708ef0c748eadd29",
+          "date": "2023-01-05T20:12:01.324Z",
+          "author": "James Cridland",
+          "content": "I won't.",
+          "source": "Podfriend"
+        }
+      ]
+    },
+    {
+      "episodeGuid": "https://theaudacitytopodcast.com/?p=5712",
+      "date": "2023-04-01T20:12:01.324Z",
+      "author": "Daniel J. Lewis",
+      "content": "This is no April Fool's!",
+      "source": "Overcast",
+      "id": "177546d395850fe276590e68371f14e8"
+    }
+  ]
+}
