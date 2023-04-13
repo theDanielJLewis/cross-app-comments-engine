@@ -1,2 +1,2 @@
-import './routes';
-import './cli';
+import './routes/routes';
+import './cli/cli';

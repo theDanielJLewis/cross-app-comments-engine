@@ -5,6 +5,7 @@ export interface Comment {
 	date: date;
 	status?: string;
 	author: string;
+	authorId: string;
 	email?: string;
 	content: string;
 	source: string;
