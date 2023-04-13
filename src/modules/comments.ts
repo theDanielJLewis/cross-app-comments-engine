@@ -2,6 +2,7 @@ import jsonfile from 'jsonfile';
 import { Comment } from '../types/comments';
 import path from 'path';
 import hashObject from '../helpers/hashObject';
+import * as findEpisode from '../helpers/findEpisode';
 
 const epMetadataFile = '../data/episode100-metadata.json';
 const podcastFile = '../data/podcast.json';
@@ -29,6 +30,8 @@ export async function submit(comment: Comment) {
 }
 
 export async function publish(comments: Comment[]): Promise<Comment[]> {
+	// const episode = findEpisode.byGuid(comment.guid)
+
 	const epMetadata = await jsonfile.readFile(
 		path.resolve(__dirname, epMetadataFile)
 	);

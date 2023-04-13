@@ -6,7 +6,7 @@ Proof-of-concept for cross-app comments in Podcasting 2.0.
 
 [![Demo of cross-app comments system](https://img.youtube.com/vi/eWkBgD6J1pk/0.jpg)](https://www.youtube.com/watch?v=eWkBgD6J1pk)
 
-## How to run
+## How to run from source
 
 You must already have Node.js and NPM or Yarn available (the following uses Yarn).
 
@@ -16,6 +16,28 @@ yarn dev
 ```
 
 Then send requests to http://localhost:3000/
+
+## Build
+
+```sh
+yarn build
+```
+
+## Generate key pair and auth token
+
+You'll need public and private keys for your app.
+
+After building, run:
+
+```sh
+yarn keygen
+```
+
+Then run the following where "App Name" is the name of your app exactly as it will appear in your POST request headers and verified apps repo.
+
+```sh
+yarn create-token "App Name"
+```
 
 ## Request methods
 

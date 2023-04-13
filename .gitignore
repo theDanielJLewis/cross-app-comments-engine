@@ -41,6 +41,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Typescript build output
+build/
+
 # TypeScript v1 declaration files
 typings/
 
@@ -71,6 +74,10 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
+
+# key pair
+private_key
+public_key
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache

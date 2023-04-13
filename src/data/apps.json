@@ -4,5 +4,9 @@
 	{ "name": "ZippyCast", "publicKey": "zc123" },
 	{ "name": "Overcast", "publicKey": "oc123" },
 	{ "name": "PodFans", "publicKey": "pf456" },
-	{ "name": "Fountain", "publicKey": "f123" }
+	{ "name": "Fountain", "publicKey": "f123" },
+	{
+		"name": "Sample App",
+		"publicKey": "-----BEGIN PUBLIC KEY-----\nMF0wDQYJKoZIhvcNAQEBBQADTAAwSQJCALELyzHwawvBeqH/SOZYdw1F7T26MrcV\nKzUmPNj3RRkB8WmDZwId11V3r6DKtORwiiizc3KJlqf52MYgp5oJnsUnAgMBAAE=\n-----END PUBLIC KEY-----"
+	}
 ]
