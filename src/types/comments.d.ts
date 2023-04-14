@@ -1,4 +1,5 @@
 export interface Comment {
+	podcastGuid: string;
 	id: string;
 	episodeGuid?: string;
 	reply?: string;

@@ -31,6 +31,7 @@ app.post(
 	body('date')
 		.isISO8601({ strict: true, strictSeparator: true })
 		.withMessage('Must contain date in ISO8601 format'),
+	body('podcastGuid').notEmpty().withMessage('Must contain podcastGuid'),
 	body('episodeGuid').notEmpty().withMessage('Must contain episodeGuid'),
 	body('author').notEmpty().withMessage('Must contain author'),
 	body('authorId').notEmpty().withMessage('Must contain authorId'),
