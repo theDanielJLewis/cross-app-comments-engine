@@ -1,4 +1,5 @@
 export interface Comment {
+	type?: string;
 	podcastGuid: string;
 	id: string;
 	episodeGuid?: string;
@@ -9,7 +10,7 @@ export interface Comment {
 	authorId: string;
 	email?: string;
 	content: string;
-	source: string;
+	source?: string;
 	geo?: string;
 	boost?: object;
 	replies?: Comment[];

@@ -7,19 +7,20 @@ import * as findEpisode from '../helpers/findEpisode';
 const epMetadataFile = '../data/episode100-metadata.json';
 const podcastFile = '../data/podcast.json';
 
-export async function submit(comment: Comment) {
+export async function submit(comments: Comment[]) {
 	const podcastData = await jsonfile.readFile(
 		path.resolve(__dirname, podcastFile)
 	);
 
-	const id = hashObject({
-		date: comment.date,
-		author: comment.author,
-		source: comment.source,
+	comments.forEach((comment) => {
+		comment.id = hashObject({
+			date: comment.date,
+			author: comment.author,
+			source: comment.source,
+		});
 	});
-	comment.id = id;
 
-	podcastData.pendingComments.push(comment);
+	podcastData.pendingComments = [...podcastData.pendingComments, ...comments];
 	console.log(podcastData);
 
 	await jsonfile.writeFile(path.resolve(__dirname, podcastFile), podcastData, {
